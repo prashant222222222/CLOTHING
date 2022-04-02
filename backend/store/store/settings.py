@@ -31,16 +31,17 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
     'rest_framework', # for throwing up json format
     'rest_framework.authtoken', # we don't want django signup , we want custom signup 
     'api',
+    'api.category'
 ]
 
 MIDDLEWARE = [
